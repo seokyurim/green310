@@ -1,0 +1,264 @@
+/* 언어설정 */
+@charset 'UTF-8';
+/* 구글폰트설정 */
+  @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+/* reset */
+* {margin: 0;
+  padding: 0;}
+ul,ol {list-style: none;}
+a {text-decoration: none;
+  color: black;}
+img {border: none;}
+
+
+
+
+
+/* 로고설정 */
+.logo h1 {
+  font-size: 30px;
+  font-weight: normal;
+  font-family: 'Paytone One', sans-serif;
+  color: #7bac7b;}
+
+/* gnb 설정 */
+.box2 {background-color: antiquewhite;}
+.gnb ul li a {
+  padding: 10px;
+  font-size: 16px;
+  display: block;}
+.gnb ul {display: flex;}
+
+.gnb ul li a:hover {background-color: #7bac7b;}
+
+/* 스토리설정 */
+.story {}
+.story h1 {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.story img {
+  width: 100%;}
+.story p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.story h2 {
+  font-size: 28px;
+  font-weight: 400;
+  border-left: solid 10px #7bac7b;
+  padding-left: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;}
+
+
+  /* info 설정 */
+  .info {padding-bottom: 25px;}
+  .info span {}
+  .info i {padding-right: 15px;
+            color: #7bac7b;
+            font-size: 20px;
+            vertical-align: bottom;}
+
+
+/* 카데고리 설정 */
+.cat {padding-top: 25px;
+        padding-bottom: 25px;}
+.cat ul{display: flex;}
+.cat li{ margin-right: 5px;}
+.cat ul li a {display: block;
+              background-color:#7bac7b;
+              border-radius: 2px;}
+.cat ul li a:hover {background-color: #eee;}
+
+
+
+/* 특집기사 설정 */
+.side {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+.side h1 {
+  border-bottom: dotted #666 1px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+.side ul {
+}
+.side li {
+    font-size: 16px;
+}
+.side ul li a {
+  display: block;
+  padding: 5px;
+}
+.side ul li a:hover {background-color: #eee;}
+
+.side i {margin-right: 10px;
+        color: #666;}
+
+
+/* 추천기사 설정 */
+.recommend {
+  padding-bottom: 40px;
+}
+.recommend h1 {
+  border-bottom: dotted #666 1px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 400;}
+  .recommend ul {}
+  .recommend li { margin-bottom: 10px;}
+  .recommend ul li a {position: relative;
+                display: block;}
+
+  /* 추천기사 사진 설정 */
+  .recommend img {width: 100%; height: auto;
+                    vertical-align: bottom;}
+  .recommend .txt {position: absolute; left: 0; bottom: 0;
+                  color: #fff;
+                  background-color: rgba(0, 0, 0, 0.5);
+                  padding: 5px 10px;
+                  box-sizing: border-box;
+                  width: 100%;}
+
+
+
+  /* sns 설정 */
+.sns{padding-bottom: 20px;}
+.sns ul{display: flex;}
+.sns li {width: 33.3333%;}
+.sns ul li a{display: block;
+              text-align: center;
+              color: #fff;
+              padding: 10px 5px;
+                font-size: 15px;}
+
+.sns li:nth-child(1) a {background-color: #000;}
+.sns li:nth-child(2) a {/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#405de6+0,c13584+51,ffdc80+100 */
+  background: linear-gradient(to right,  #405de6 0%,#c13584 51%,#ffdc80 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  }
+.sns li:nth-child(3) a {background-color: #0b3d91;}
+
+
+/* 관련기사 설정 */
+.a {background-color: antiquewhite;
+    padding: 20px;}
+.a h1{font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 20px;
+      margin-left: 10px;
+      font-weight: 600;
+      color: tan;}
+.a ul {display: flex;}
+.a li {width: 25%;}
+.a ul li a {display: block;
+            padding: 5px;
+           margin-top: 10px;}
+.a img {width: 100%;}
+.a .txt {font-size: 15px;}
+
+
+
+
+/* 인기기사설정 */
+.popular {}
+.popular h1 {
+  border-bottom: dotted #666 1px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 400;}
+
+.popular ul {}
+.popular li {}
+.popular ul li a {
+  display: block;
+  padding: 5px;
+  font-size: 16px;
+color:#7bac7b;}
+.popular ul li a:hover {background-color: #eee;}
+
+
+/* 이미지와 텍스트 정렬 */
+.popular a::after {content:'';
+                  display: block;
+                  clear: both;}
+.popular img {float: left;
+              padding-right: 20px;}
+.popular .txt {float: none;
+                 margin-left: 60px;
+                }
+.popular span {display: block;
+                color:slategrey;
+                font-size: 12px;}
+
+
+/* 카피설정 */
+.box5 {border-top: dotted 2px #666;}
+.copy p {
+  font-size: 14px;
+  color: #666;}
+
+
+/* 전체사이즈 */
+.box1, .gnb, .boxA, .copy {
+  width: 1280px;
+  margin: 0 auto;}
+
+/* 박스 사이 조절 */
+.boxA {margin-bottom: 30px;}
+.box5 {padding-top: 15px;
+  padding-bottom: 15px;}
+
+
+
+
+
+
+
+
+      /* 반응형웹 구성하기################################################ */
+
+
+
+      /* 모바일구간  */
+      @media(max-width:599px){
+
+
+      .a ul li {width: 50%;}}
+
+
+      /* 테블릿구간 */
+      /* 600px 이상 부터 767px이하구간 */
+@media(min-widht:600px) and (max-widht:767px){
+
+
+
+
+
+
+}
+
+
+
+      /* 테스크탑구간 */
+      /* 768px 이상구간 */
+@media(min-width:768px){
+
+
+
+/* 박스설정 */
+.boxA {display: flex;}
+.box3 {width: 70%;}
+.box4 {width: 30%;}
+
+
+
+/* 박스3와4사이 간격조절 */
+.box3 {padding-right: 50px;
+  box-sizing: border-box;
+  }
+}
