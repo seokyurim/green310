@@ -109,7 +109,7 @@ height: 100%;}
 }
 .hero_inner>div:nth-child(4) {
     bottom: 0;
-    left: 50%;
+    left: 53%;
     margin-left: 300px;
     margin-bottom: 100px;
     z-index: 1;
@@ -230,16 +230,218 @@ justify-content: flex-end;
 
 .banner .boxBottom .txt {color: #fff;}
 
+/* 프로모션 */
+.promotion {height: 43vh;
+            background-image: url(img/2023_autumn_promotion_bg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            width: 100%;
+            overflow: hidden;}
+.promotion>div {width: 50%;
+                height: 100%;}
+.promotion .imgBox {
+                      display: flex;
+                      justify-content: flex-end;
+                      align-items: center;}
+.promotion .imgBox img {width: 100%;
+                        max-width: 400px;
+                        }
+
+.promotion .txtBox {
+                    display: flex;
+                      flex-direction: column;
+                      justify-content: center;
+                      padding-left: 50px;
+                      align-items: flex-start;
+                      }
+.promotion .txtBox img {width: 100%;
+                      max-width: 300px;}
+.promotion p {border: 2px solid #155c34;
+              padding: 10px 30px;
+              border-radius: 5px;
+              margin-top: 50px;
+              color: #155c34;}
+
+/* 리서브 */
+.reserve {}
+
+.reserve {height: 300px;
+  background-image: url(img/230811_pc_reserve_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  overflow: hidden;}
+.reserve>div {width: 50%;
+      height: 100%;}
+.reserve .imgBox {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+          padding-left: 100px;
+            padding-top: 40px;}
+.reserve .imgBox img {width: 100%;
+              max-width: 210px;
+              }
+
+.reserve .txtBox {
+          display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            padding-left: 200px;}
+.reserve .txtBox img {width: 100%;
+            max-width: 400px;
+            padding-bottom: 50px;}
+.reserve p {border: 2px solid #b68341;
+    padding: 10px 30px;
+    border-radius: 5px;
+    align-self: center;
+    color: #b68341;
+    margin-right: -400px;}
+
+
+/* pick */
+.pick {}
+
+.pick {height: 800px;
+  background-image: url(img/230921_1_pc_pick_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  overflow: hidden;
+  background-attachment: fixed;}
+.pick>div {width: 50%;
+      height: 100%;}
+.pick .imgBox {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+          padding-right: 50px;
+          padding-bottom: 150px;}
+.pick .imgBox img {width: 100%;
+              max-width: 950px;
+              }
+
+.pick .txtBox {
+          display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 100px;
+
+            align-items: flex-end
+            }
+.pick .txtBox img {width: 100%;
+            max-width: 400px;
+            padding-bottom: 30px;}
+            
+.pick p {border: 2px solid #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: #fff;}
+
+
+/* 매거진 */
+
+.magazine {height: 350px;
+  background-image: url(img/reserve_bg_pc.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex-direction: row-reverse;
+  width: 100%;
+  overflow: hidden;
+  background-position: center center;
+  position: relative;}
+.magazine>div {width: 50%;
+      position: absolute;}
+.magazine .imgBox {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+          left: 50%;
+          margin-left: 70px;}
+.magazine .imgBox img {width: 100%;
+              max-width: 340px;
+              }
+
+.magazine .txtBox {
+          display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            top: 30%;
+            left: 6%;}
+.magazine .txtBox img {width: 100%;
+            max-width: 580px;
+            padding-bottom: 30px;}
+            
+.magazine p {border: 2px solid #333;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 180px;
+    color: #333;}
+
+/* 맵 */
+
+.map {height: 400px;
+  background-image: url(img/store_bg.jpg);
+  background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+width: 100%;
+overflow: hidden;}
+
+.map>div {width: 50%;
+    height: 100%; }
+.map .imgBox {
+  position: relative;
+}
+.map .imgBox img {width: 100%;
+            
+              position: absolute;}
+.map .imgBox img:nth-child(1) {top: 0;
+  max-width: 360px;
+right: 50%;
+transform: translateX(70%);}
+.map .imgBox img:nth-child(2) {top: 50%;
+max-width: 220px;
+right: 50%;
+transform: translate(150% ,-20%);}            
+
+.map .txtBox {
+          display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 50px;
+        align-items: flex-start;
+
+     }
+.map .txtBox img {width: 100%;
+              max-width:300px ;
+             }
+.map .txtBox p {
+    margin-top: 50px;
+  color: #155c34;}
+  .map .txtBox p:nth-child(1) {font-size: 28px;}
+  .map .txtBox p:nth-child(1) strong {display: block;}
+  .map .txtBox p.more {
+    border: 2px solid #155c34;
+        padding: 10px 30px;
+      border-radius: 5px;
+  }
 
 
 
 
-
-
-
-
-
-
+/* 푸터 */
+footer {background-color: #333;
+        height: 600px;}
 
 
 /* 미디어쿼리구간 ####################################################### */
