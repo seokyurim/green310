@@ -1,0 +1,200 @@
+
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+*{margin: 0;
+    padding: 0;}
+ul,ol {list-style: none;}
+a {text-decoration: none;
+    color: #fff;}
+img {vertical-align: bottom;
+    border: none;}
+
+
+
+body {background-color: #000;
+        color: #fff;}
+div {overflow: hidden;}
+
+
+/* box1설정 */
+.box1 {background-color: #000;
+        height: 80vh;
+        position: relative;}
+.box1 .vid {position: absolute;
+        left: 0 ;
+        top: 0;
+        z-index: 0;
+        opacity: 0.6;
+        width: 100%;}
+
+.vid video {width: 100%;
+        height: auto;
+        min-width: 1280px;}
+
+.box1-1 {display: flex;
+        justify-content: space-between;
+        position: relative;
+        z-index: 10;}
+.box1 h1 { }
+.navi {display: flex;}
+.navi li {}
+.navi a {display: block;
+        padding: 10px;}
+
+.box1-2 {
+        text-align: right;
+        font-size: 80px;
+        position: relative;
+        z-index: 10;
+        display: flex;
+        
+        justify-content: end;
+        align-items: flex-end;
+        height: calc(100% - 120px);
+        font-family: 'IBM Plex Mono', monospace;
+        }
+
+
+/* box2설정 */
+.box2 {display: flex;
+        height: 50vh;}
+.box2>div {width: 50%;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;}
+.box2-1 {padding: 30px 20px;
+        }
+.box2-1 h2 {margin-bottom: 20px;
+                font-size: 36px;
+                text-align: right;
+                width: 90%;}
+.box2-1 p {width: 90%;
+        text-align: right;
+        }
+        
+.box2-2 {height: 100%;
+        background-color: #666;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;}
+.box2-2 p {width: 20%;
+        height: 80%;
+        background-color: #fff;
+        overflow: hidden;}
+.box2-2 p img { height: 100%;
+        width: auto;
+        transform: translateX(-20%);}
+
+/* box3설정 */
+.box3 {padding: 20px;
+        background-color: #aaa;
+        background-image: url(https://www.nasa.gov/wp-content/uploads/2023/11/s72-31047.jpg?resize=2000,1321);
+        text-align: center;
+        height: 500px;
+        background-size: cover;
+        transform: translateY();}
+.box3 h2 {margin-bottom: 10px;}
+.box3>div {}
+.box3 p {margin-bottom: 50px;}
+
+
+/* box4설정 */
+.box4 {display: flex;
+        height: 300px;}
+.box4-1 {width: 40%;}
+.box4-2 {width: 60%;}
+
+.box4>div {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;}
+.box4-1 {display: flex;
+        height: 100%;}
+.box4-1 p {width: 20%;
+        background-color: rebeccapurple;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        background-size: auto 100%;
+        transition: all 0.8s;}
+.box4-1 p:nth-child(1) {background-image: url(https://www.jangheung.go.kr/build/images/1407/14074803/140748034503952.jpg/930x1x70/930x1_140748034503952.jpg);}
+.box4-1 p:nth-child(2)  {background-image: url(https://img.khan.co.kr/news/2015/12/15/2015121501002407000198541.jpg);}
+.box4-1 p:nth-child(3)  {background-image: url(https://blog.kakaocdn.net/dn/d06FFQ/btquNE2JHD0/AG2JiL0IlrKnIM3wsKuEvk/img.png);}
+.box4-1 p:nth-child(4) {background-image: url(https://cdn.thedailypost.kr/news/photo/202007/75123_67503_5231.jpg);}
+.box4-1 p:nth-child(5) {background-image: url(https://blog.kakaocdn.net/dn/ccve7J/btqzBVRhxqN/VzlpgoKc0NrnFCbf15JBq1/img.jpg);}
+.box4-2 {padding: 30px 20px;
+}
+.box4-2 h2 {margin-bottom: 20px;}
+.box4-2 p {width: 60%;}
+
+
+.box4-1 span {display: flex;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0.5);
+                text-align: center;
+                justify-content: center;
+                padding: 10px 0;
+                transform:  translateY(200px);
+                transition: all 0.5s;}
+.box4-1 p:hover  span{transform: translateY(0);
+                        }
+.box4-1 p:hover {background-size:auto 120%;}
+/* box5설정 */
+
+.box5 {padding: 20px;
+        text-align: center;
+        position: relative;
+        height: 250px;}
+.box5 h2 {margin-bottom: 10px;}
+.box5>div {}
+.box5 p {margin-bottom: 50px;}
+.box5 img {position: absolute;
+        left: 0;
+        bottom: 0;
+        animation: ani 10s infinite linear alternate;
+        z-index: -1;}
+
+        /* 애니메이션 설정 */
+        @keyframes ani {
+        0% {left: 0;}
+        100% {left: 100%;}
+
+
+        }
+/* box6설정 */
+.box6 {display: flex;
+        height: 250px;
+        background-color: #aaa;}
+.box6-1 {width: 60%;}
+.box6-2 {width: 40%;}
+.box6 iframe {width: 100%;
+                height: 100%;}
+.box6>div {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;}
+.box6-1 {padding: 30px 20px;
+}
+.box6-1 h2 {margin-bottom: 20px;}
+.box6-1 p {width: 60%;}
+.box6-2 {height: 100%;
+background-color: #666;}
+
+
+/* box7설정 */
+.box7 { background-color: #000;
+    color: #fff;
+    padding: 20px;}
+.box7-1 {text-align: center;
+        margin-bottom: 20px;}
+.box7-1 h2 {margin-bottom: 10px;}
+.box7-1>div {}
+
+.box7-2 {}
+.box7-2>ul {display: flex;
+            justify-content: flex-end;
+            }
+.box7-2>ul>li {}
+.box7-2 a {color: #fff;
+            display: block;
+            padding: 10px;}

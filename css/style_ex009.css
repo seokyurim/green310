@@ -1,0 +1,61 @@
+/* 언어설정 */
+@charset 'UTF-8';
+/* resat */
+*{margin: 0;
+    padding: 0;}
+ul,ol{list-style: none;}
+a {text-decoration: none; 
+    color: black;}
+
+img{border: none;}
+
+/* 컨테이너박스설정 (부모속성) */
+#wrap{display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%; margin: 0 auto;}
+/* item박스설정 (자손자속성) */
+.header {background-color: #5f7cff; height: 150px; width: 100%;order: 0; text-align: center; font-size: 60px; font-style: italic; }
+.slide {background-color: #e32fad; height: 900px; width: 90%;order: 1;}
+.gallery {background-color: #f8de73; height: 400px; width: 50%; order: 4;}
+.rankup {background-color: #00d2a5; height: 900px; width: 10%; order: 2;}
+.latest {background-color: #ff5a18; height: 400px; width: 50%;order: 5;}
+.popular {background-color: #ffd5b8;height: 200px ;width: 100%; order: 3;}
+.banner {background-color: #0175bb; height: 250px; width: 80%;order: 7;}
+.sns {background-color: #b2f9e6; height: 250px; width: 20%;order: 6;}
+.footer {background-color: #474747;height: 70px; width: 100%;order: 8;}
+
+/* 500px이하 */
+@media(max-width:500px){
+
+    #wrap{ width: 100%; margin: 0 auto;}
+
+    .header {background-color: #e2e6f5; height: 150px; width: 100%;order: 0; text-align: center; font-size: 60px; font-style: italic; }
+.slide {background-color: #eb84cc; height: 150px; width: 100%;order: 1;}
+.gallery {background-color: #f8de73; height: 150px; width: 100%; order: 4;}
+.rankup {background-color: #9efae6; height: 150px; width: 100%; order: 2;}
+.latest {background-color: #ff5a18; height: 150px; width: 100%;order: 5;}
+.popular {background-color: #ffd5b8;height: 150px ;width: 100%; order: 3;}
+.banner {background-color: #0175bb; height: 250px; width: 100%;order: 7;}
+.sns {background-color: #b2f9e6; height: 250px; width: 100%;order: 6;}
+.footer {background-color: #474747;height: 70px; width: 100%;order: 8;}
+
+}
+
+/* 501~799px */
+
+@media(min-width:501px) and (max-width:799px)
+
+{
+    .header {background-color: #aaff5f; height: 150px; width: 100%;order: 0; text-align: center; font-size: 60px; font-style: italic; }
+.slide {background-color: #00d2a5; height: 900px; width: 100%;order: 1;}
+.gallery {background-color: #f8de73; height: 400px; width: 100%; order: 4;}
+.rankup {background-color: #e32fad; height: 900px; width: 100%; order: 2;}
+.latest {background-color: #ffd5b8; height: 400px; width: 100%;order: 5;}
+.popular {background-color: #ff1;height: 200px ;width: 100%; order: 3;}
+.banner {background-color: #5f7cff; height: 250px; width: 100%;order: 7;}
+.sns {background-color: #b2f9e6; height: 250px; width: 100%;order: 6;}
+.footer {background-color: #474747;height: 70px; width: 100%;order: 8;}
+}
+
+    

@@ -1,0 +1,616 @@
+/* 언어설정 */
+@charset 'UTF-8';
+
+*{margin: 0; padding: 0;}
+ul,ol {list-style: none;}
+a {text-decoration: none; color: #000;}
+img {border: none; vertical-align: bottom;}
+
+/* 박스1설정 */
+.box1 {display: flex;
+    justify-content: space-between;
+    height: 120px;
+    background-color: #f4f4f4;}
+.box1 ul {display: flex;}
+.box1 li {
+        margin-top: 35px;}
+.box1>div {padding: 10px 20px;}
+.box1 .logo {width: 150px;
+            height: 50px;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            margin-top: 20px;}
+.box1 i {display: none;}
+.box1 a {cursor: pointer;
+            font-size: 14px;
+            padding: 10px 20px;
+            color: rgb(43, 139, 66);
+            display: block;}
+
+.box1 ul li a:hover {border-radius: 25px;
+                border: 2px dotted #333;
+                
+                }
+
+
+
+/* 박스2설정 */
+
+.box2 {background-color: red;
+position: relative;
+width: 100%;
+height: 80vh;
+overflow: hidden;
+}
+.box2 .vid {position: relative;
+    z-index: 1;}
+.box2 .vid video {width: 100%;
+                    height: auto}
+
+.box2-1 {display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+    height: 100%;
+position: absolute;
+z-index: 2;
+left: 10%;
+top: 30%;}
+
+.box2 h2 {font-size: 40px;
+    font-weight: 500;
+    color: #f4f4f4;
+    margin-bottom: 20px;
+    font-family:'MADE Mirage Medium', source-han-serif-korean, serif;;font-weight:normal; letter-spacing:0.12em;}
+.box2 p {margin-bottom: 20px;
+    width: 50%;
+    color: #f4f4f4;
+    font-family:'MADE Mirage Medium', source-han-serif-korean, serif;;font-weight:normal; letter-spacing:0.12em;}
+.box2-1 .btn {}
+.box2-1 a { color: #f4f4f4;
+width: 150px;
+height: 50px;
+border: 1px solid #f4f4f4;;
+border-radius: 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 50px;}
+.box2-1 .btn:hover a{background-color: #de5050;
+                color: #f4f4f4;}
+
+
+
+.box3{height: 300px;}
+.box3_inner {display: flex;
+            justify-content: center;
+            background-color: burlywood;
+            height: 100%;}
+.box3_inner>div {width: 25%;
+                height: 100%;
+                position: relative;
+                display: flex;
+                justify-content: center;}
+.box3_inner p {}
+.box3_inner .btn {width: 30px;
+                    height: 30px;
+                    font-size: 12px;
+                    position: absolute;
+                    right:  12px;
+                    bottom: 12px;
+                    border: 1px solid #000;
+                    border-radius: 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;}
+                    .box3_inner .btn:hover {background-color: #eee;
+                    cursor: pointer;
+                    opacity: 0.8;}
+
+.box3-1 {background-image: url(https://board.makeshop.co.kr/board/special249/urbanic30_image16/20220904153737737.jpg);
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: 0 -20px;
+                            }
+.box3-2 {background-image: url(https://board.makeshop.co.kr/board/special249/urbanic30_image16/20210724124822531.jpg);
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: 0 -20px;}
+.box3-3 {background-image: url(https://board.makeshop.co.kr/board/special249/urbanic30_image16/22winter.jpg);
+                                background-size: cover;
+                                background-repeat: no-repeat;}
+.box3-4 {background-image: url(https://board.makeshop.co.kr/board/special249/urbanic30_image16/22fw.jpg);
+                                    background-size: cover;
+                                    background-repeat: no-repeat;}
+                    /* 박스4설정 */
+.box4 {display: flex;
+    height: 400px;
+    background-color: tomato;
+    align-items: center;}
+.box4>div:nth-child(1) {width: 70%;}
+.box4>div:nth-child(2) {width: 30%;}
+.box4>div {padding: 10px 20px;}
+.box4-1 {display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: flex-start;}
+.box4 h2 {font-size: 20px;
+         margin-bottom: 20px;}
+.box4 p {margin-bottom: 20px;
+        width: 60%;}
+.box4-1 .btn {width: 150px;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    }
+
+
+/* 박스5설정 */
+.box5 {display: flex;
+    height: 400px;
+    background-color: rgb(244, 175, 163);
+    align-items: center;}
+.box5>div:nth-child(1) {width: 70%;}
+.box5>div:nth-child(2) {width: 30%;}
+.box5>div {padding: 10px 20px;}
+.box5-1 {display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: flex-start;}
+.box5 h2 {font-size: 20px;
+         margin-bottom: 20px;}
+.box5 p {margin-bottom: 20px;
+        width: 60%;}
+.box5-1 .btn {width: 150px;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    }
+
+
+
+
+
+/* 박스6설정 */
+.box6 {display: flex;
+    height: 400px;
+    background-color: rgb(180, 168, 166);
+    align-items: center;}
+.box6>div:nth-child(1) {width: 70%;}
+.box6>div:nth-child(2) {width: 30%;}
+.box6>div {padding: 10px 20px;}
+.box6-1 {display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: flex-start;}
+.box6 h2 {font-size: 20px;
+        margin-bottom: 20px;}
+.box6 p {margin-bottom: 20px;
+        width: 60%;}
+.box6-1 .btn {width: 150px;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    }
+
+/* 박스7설정 */
+.box7 {display: flex;
+    height: 200px;
+    background-color: rgb(251, 232, 228);
+    align-items: center;}
+.box7>div:nth-child(1) {width: 70%;}
+.box7>div:nth-child(2) {width: 30%;}
+.box7>div {padding: 10px 20px;}
+.box7-1 {display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: flex-start;}
+
+
+/* 박스8설정 */
+.box8-1 {background-color: #222;
+        color: #fff;
+        height: 50px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 20px;}
+
+
+
+
+
+/* 미디어쿼리구간####################################### */
+/* 880px 이하일 때 */
+@media(max-width:880px){
+
+
+/* 박스1설정 */
+.box1 {display: flex;
+    justify-content: space-between;}
+.box1 i {display: block;
+            font-size: 30px;
+            margin-top: 25px;
+            margin-right: 30px;
+            cursor: pointer;}
+.box1 ul {display: none;}
+.box1 li {margin: 0 20px;}
+.box1>div {padding: 10px 20px;}
+.box1 .logo {width: 150px;
+            height: 50px;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            }
+.box1 li {display: none;}
+
+/* 박스2설정 */
+
+.box2 {background-color: red;
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    }
+    .box2 .vid {position: relative;
+        z-index: 1;}
+    .box2 .vid video {width: 100%;
+                        height: auto}
+    
+    .box2-1 {display: flex;
+        justify-content: start;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 60%;
+        height: 100%;
+    position: absolute;
+    z-index: 2;
+    left: 10%;
+    top: 30%;}
+
+/* 박스3설정 */
+.box3{height: 100vh;
+    width: 100%;}
+.box3_inner {display: flex;
+        justify-content: center;
+        background-color: burlywood;
+        height: 100%;
+        width: 100%;
+        flex-wrap: wrap;}
+.box3_inner>div {width: 100%;
+            height: 25%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;}
+.box3_inner p {}
+.box3_inner .btn {width: 50px;
+                height: 50px;
+                position: absolute;
+                right:  0;
+                bottom: 0;
+                border: 1px solid #000;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                display: none;}
+
+    /* 박스4설정 */
+.box4 {display: flex;
+    height: 400px;
+    background-color: tomato;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;}
+.box4>div:nth-child(1) {width: 100%;}
+.box4>div:nth-child(2) {width: 100%;}
+.box4>div {padding: 10px 20px;}
+.box4-1 {display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: flex-start;}
+.box4 h2 {font-size: 20px;
+         margin-bottom: 20px;}
+.box4 p {margin-bottom: 20px;
+        width: 60%;}
+.box4-1 .btn {width: 150px;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    }
+
+
+/* 박스5설정 */
+.box5 {display: flex;
+    height: 400px;
+    background-color: rgb(244, 175, 163);
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;}
+.box5>div:nth-child(1) {width: 100%;}
+.box5>div:nth-child(2) {width: 100%;}
+.box5>div {padding: 10px 20px;}
+.box5-1 {display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: flex-start;}
+.box5 h2 {font-size: 20px;
+         margin-bottom: 20px;}
+.box5 p {margin-bottom: 20px;
+        width: 60%;}
+.box5-1 .btn {width: 150px;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    }
+
+
+/* 박스6설정 */
+.box6 {display: flex;
+    height: 400px;
+    background-color: rgb(180, 168, 166);
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;}
+.box6>div:nth-child(1) {width: 100%;}
+.box6>div:nth-child(2) {width: 100%;}
+.box6>div {padding: 10px 20px;}
+.box6-1 {display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: flex-start;}
+.box6 h2 {font-size: 20px;
+        margin-bottom: 20px;}
+.box6 p {margin-bottom: 20px;
+        width: 60%;}
+.box6-1 .btn {width: 150px;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    }
+
+/* 박스7설정 */
+
+.box7 {display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 100%;
+    background-color: rgb(251, 232, 228);}
+.box7>div {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;}
+
+.box7>div:nth-child(1) {background-color: thistle;
+    width: 100%;
+    box-sizing: border-box;}
+
+
+}
+
+
+/* 1090px 이하일 때 */
+@media(min-width:880px) and (max-width:1240px){
+
+/* 박스1설정 */
+.box1 {display: flex;
+    justify-content: space-between;}
+.box1 i {display: block;
+            font-size: 30px;
+            margin-top: 30px;
+            margin-right: 30px;}
+.box1 ul {display: none;}
+.box1 li {margin: 0 20px;}
+.box1>div {padding: 10px 20px;}
+.box1 .logo {width: 150px;
+            height: 50px;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            margin-top: 25px;}
+            .box1 li {display: none;}
+
+/* 박스2설정 */
+
+.box2 {background-color: red;
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    }
+    .box2 .vid {position: relative;
+        z-index: 1;}
+    .box2 .vid video {width: 100%;
+                        height: auto}
+    
+    .box2-1 {display: flex;
+        justify-content: start;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 60%;
+        height: 100%;
+    position: absolute;
+    z-index: 2;
+    left: 10%;
+    top: 30%;}
+
+/* 박스3설정 */
+.box3{height: 800px;
+        width: 100%;}
+.box3_inner {display: flex;
+            justify-content: center;
+            background-color: burlywood;
+            height: 100%;
+            width: 100%;
+            flex-wrap: wrap;}
+.box3_inner>div {width: 50%;
+                height: 50%;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;}
+.box3_inner p {}
+.box3_inner .btn {width: 50px;
+                    height: 50px;
+                    position: absolute;
+                    right:  0;
+                    bottom: 0;
+                    border: 1px solid #000;
+                    border-radius: 5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    display: none;}
+
+
+/* 박스4설정 */
+.box4 {display: flex;
+    height: 400px;
+    background-color: tomato;
+    align-items: center;
+    position: relative;}
+.box4>div:nth-child(1) {width: 70%;}
+.box4>div:nth-child(2) {width: 30%;}
+.box4>div {padding: 10px 20px;}
+.box4-1 {display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: flex-start;}
+.box4 h2 {font-size: 20px;
+         margin-bottom: 20px;}
+.box4 p {margin-bottom: 20px;
+        width: 60%;}
+.box4-1 .btn {width: 150px;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    }
+.box4-2 { width: 20%;
+            height: 200px;
+            background-color: #eee;
+            position: absolute;
+            bottom: 0;
+            right: 0;}
+
+/* 박스5설정 */
+.box5 {display: flex;
+    height: 400px;
+    background-color: rgb(244, 175, 163);
+    align-items: center;
+    position: relative;}
+.box5>div:nth-child(1) {width: 70%;}
+.box5>div:nth-child(2) {width: 30%;}
+.box5>div {padding: 10px 20px;}
+.box5-1 {display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: flex-start;}
+.box5 h2 {font-size: 20px;
+         margin-bottom: 20px;}
+.box5 p {margin-bottom: 20px;
+        width: 60%;}
+.box5-1 .btn {width: 150px;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    }
+
+.box5-2 { width: 20%;
+        height: 200px;
+        background-color: #eee;
+        position: absolute;
+        bottom: 0;
+        right: 0;}
+
+
+
+/* 박스6설정 */
+.box6 {display: flex;
+    height: 400px;
+    background-color: rgb(180, 168, 166);
+    align-items: center;
+    position: relative;}
+.box6>div:nth-child(1) {width: 70%;}
+.box6>div:nth-child(2) {width: 30%;}
+.box6>div {padding: 10px 20px;}
+.box6-1 {display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: flex-start;}
+.box6 h2 {font-size: 20px;
+        margin-bottom: 20px;}
+.box6 p {margin-bottom: 20px;
+        width: 60%;}
+.box6-1 .btn {width: 150px;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    }
+
+.box6-2 { width: 20%;
+        height: 200px;
+        background-color: #eee;
+        position: absolute;
+        bottom: 0;
+        right: 0;}
+/* 박스7설정 */
+
+.box7 {display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 100%;
+    background-color: rgb(251, 232, 228);}
+.box7>div {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;}
+
+.box7>div:nth-child(1) {background-color: thistle;
+    width: 100%;}
+
+
+}

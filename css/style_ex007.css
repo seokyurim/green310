@@ -1,0 +1,62 @@
+/* 언어설정 */
+@charset 'UTF-8';
+/* resat */
+*{margin: 0;
+    padding: 0;}
+ul,ol{list-style: none;}
+a {text-decoration: none; 
+    color: black;}
+
+img{border: none;}
+
+/* 컨테이너박스설정 (부모속성) */
+#wrap{display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%; margin: 0 auto;}
+/* item박스설정 (자손자속성) */
+.header {background-color: #ff6b57; height: 80px; width: 100%;}
+.slide {background-color: #3c90be; height: 440px; width: 50%;}
+.gallery {background-color: #f8de73; height: 440px; width: 30%;}
+.rankup {background-color: #00d2a5; height: 440px; width: 20%;}
+.latest {background-color: #9cabe4; height: 270px; width: 30%;}
+.popular {background-color: #d76817;height: 270px ;width: 30%;}
+.banner {background-color: #0175bb; height: 270px; width: 23%;}
+.sns {background-color: #fe6eda; height: 270px; width: 17%;}
+.footer {background-color: #474747;height: 100px; width: 100%;}
+
+/* 반응형선언_미디어쿼리 */
+@media(max-width:500px){
+
+
+    /* 500px이하일때 설정됨 */
+
+    #wrap{width: 100%; margin: 0 auto;}
+
+.header {background-color: #aaa; height: 80px; width: 100%;}
+.slide {background-color: #bbb; height: 440px; width: 100%;}
+.gallery {background-color: #ccc; height: 440px; width: 100%;}
+.rankup {background-color: #ddd; height: 440px; width: 100%;}
+.latest {background-color: #111; height: 270px; width: 100%;}
+.popular {background-color: #222;height: 270px ;width: 100%;}
+.banner {background-color: #333; height: 270px; width: 100%;}
+.sns {background-color: #474747; height: 270px; width: 100%;}
+.footer {background-color: #474747;height: 100px; width: 100%;}
+
+}
+
+    /* 테블릿구간  */
+    /* 501px부터 799px까지 */
+    @media(min-width:501px) and (max-width:799px){
+
+        .header {background-color: #ff6b57; height: 80px; width: 100%;}
+        .slide {background-color: #3c90be; height: 440px; width: 100%;}
+        .gallery {background-color: #f8de73; height: 440px; width: 100%;}
+        .rankup {background-color: #00d2a5; height: 440px; width: 100%;}
+        .latest {background-color: #9cabe4; height: 270px; width: 100%;}
+        .popular {background-color: #d76817;height: 270px ;width: 100%;}
+        .banner {background-color: #0175bb; height: 270px; width: 100%;}
+        .sns {background-color: #fe6eda; height: 270px; width: 100%;}
+        .footer {background-color: #474747;height: 100px; width: 100%;}
+
+    }

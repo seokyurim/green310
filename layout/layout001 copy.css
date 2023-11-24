@@ -1,0 +1,180 @@
+
+@charset 'UTF-8';
+*{margin: 0;
+    padding: 0;}
+ul,ol {list-style: none;}
+a {text-decoration: none;
+    color: #000;}
+img {vertical-align: bottom;
+    border: none;}
+
+    h2 {color: #f33535;}
+
+/* box1설정 */
+.box1 {display: flex;
+        height: 8vh;
+    background-color: #0E3E77;
+    padding: 20px;
+    justify-content: space-between;}
+.box1 h2 img {transform: translateY(-10px);}
+.box1 .gnb {}
+.box1 ul {display: flex;
+        }
+.box1 li {}
+.box1 a {display: block;
+        padding: 15px;
+        margin-top: 20px;
+        color: #fff;}
+.box1 a:hover {border-bottom: #f33535 solid 2px;}
+/* box2설정 */
+.box2 {text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+
+    position: relative;}
+.box2 h2 {font-size: 50px;
+        margin-bottom: 30px;
+        margin-top: 80px;}
+.box2 p {width: 50%;
+        margin-bottom: 40px;
+        color: #fff;}
+.box2 .btn {
+    
+    padding: 10px 20px;
+    border: 1px solid #111;}
+.box2 h2 span {display: block;
+    font-size: 30px;} 
+.box2 .vid {position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transform: translateY(-50px);}
+.box2 .vid video {width: 100%;
+    height: auto;
+    min-width: 1280px;}
+
+/* box3설정 */
+
+.box3 {text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    background-color: #fff;}
+.box3 h2 {font-size: 30px;
+        margin-bottom: 10px;}
+.box3 p {width: 50%;
+        margin-bottom: 20px;}
+
+/* box4설정 */
+.box4 {display: flex;
+        height: 450px;
+        position: relative;}
+.box4>div {width: 50%;}
+
+.box4-1 {width: 100%;
+        overflow: hidden;
+        text-align: center;
+        margin-bottom: 20px;}
+.box4-1 img {width: 80%;
+    transform: translateY(-50px);}
+
+.box4-2 {text-align: start;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgb(241, 147, 147)234, 61, 61);}
+.box4-2 h2 {font-size: 30px;
+        margin-bottom: 10px;}
+.box4-2 p {width: 50%;
+        margin-bottom: 50px;}
+.box4-2 .btn {
+            padding: 10px 20px;
+            border: 1px solid #111;}
+
+/* box5설정 */
+
+.box5 {height: 400px;
+        display: flex;
+            flex-direction: column;
+            background-color: #666;
+            justify-content: space-around;
+            }
+
+.box5 .imgbox{display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;}
+.box5 .imgbox p {width: 20%;
+                    height: 80%;
+                    background-color: rebeccapurple;
+                    margin-left: 20px;}
+                    
+.box5 .txtbox{display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                height: calc(400px - 80%)}
+.box5 .txtbox p {width: 20%;
+                    background-color: red;
+                    margin-left: 20px;
+                    padding: 20px 0;
+                    margin-bottom: 50px;}
+
+/* box6설정 */
+.box6 {
+    padding: 30px;
+    background-color: rgb(241, 147, 147)234, 61, 61);}
+.box6-1 { display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;}
+.box6 h2 {font-size: 30px;
+        margin-bottom: 10px;
+        margin-top: 20px;}
+.box6 p {width: 50%;
+        margin-bottom: 20px;}
+
+
+/* box7설정 */
+.box7 {text-align: start;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    background-color: rgb(255, 212, 212);
+    height: 30vh;}
+.box7 h2 {font-size: 30px;
+        margin-bottom: 10px;}
+.box7 p {width: 50%;
+        margin-bottom: 20px;}
+
+/* box8설정 */
+.box8{background-color: #666;
+    display: flex;
+    justify-content: space-around;
+        align-items: center;
+    height: 20vh;
+    padding: 30px 40px;}
+.box8 h2 {font-size: 40px;
+            font-weight: 500;}
+
+.box8 .link {}
+.box8 .link ul {}
+.box8 .link li {margin-bottom: 10px;}
+
+.box8 .contact {}
+.box8 .contact ul {}
+.box8 .contact li {margin-bottom: 10px;}

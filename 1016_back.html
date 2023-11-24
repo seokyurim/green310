@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background 속성</title>
+</head>
+<body>
+    <h1>background속성</h1>
+    <p>background: 속성에 한줄에 작성가능 작성시 순서는 관계없으며 띄어쓰기로 구분함</p>
+    <h3>상세속성</h3>
+    <ul>
+        <li>background-color:색깔을 넣어줌</li>
+        <li>backgroun-image:배경이미지를 넣어줌 url('이미지경로주소') -따옴표생략가능</li>
+        <li>background-repeat: repeat/ repeat-x (가로반복) / rapeat-y(세로반복)/ no-repeat (반복없음) </li>
+        <li>background-position: 이미지를 넣었을 경우 위치를 조정 수평(left/right/center)-수직(top/bottom/center)</li>
+            left- top 기준으로 수치값으로도 이동가능
+        <li>background-size:배경이미지의 크기 <br> contain(이미지가 잘리지않은 상태에서 화면을 꽉 채움, 여백생길 수 있음)
+            <br> cover (요소안에 배경이미지를 꽉 채움, 화질이 깨지거나 이미지가 잘려나올 수 있음) <br> 크기,%으로도 나타낼 수 있음
+        </li>
+        <li>background-attachment: 배경이미지고정/ scroll로 올라감/ fixed고정됨(left-top 00기준)</li>
+    </ul>
+    <h3>예제</h3>
+        <ul class="apple">
+            <li>예산사과</li>
+            <li>무주사과</li>
+            <li>충주사과</li>
+        </ul>
+            <div class="applebox">
+                <p>사과의 효능
+                     <br> 변비개선/피부를 맑고 하얗게 가꿔주는 효능 
+                </p>
+            </div>
+
+        <style>
+            .apple {list-style: none;}
+            .apple li {padding: 20px;
+                        margin-bottom: 10px;
+                        background-color: antiquewhite;
+                        background-image: url('img/apple001.png');
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: -20px -8px; text-indent: 50px;}
+            .applebox { width: 500px; height: 400px;
+                        background-image: url('img/apple_002.png');
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        display: flex; align-items: flex-end;}
+            .applebox p {background-color: rgba(0, 0, 0, 0.8);
+                        color: #fff;
+                        margin: 0%; padding: 10px; width: 100%; text-align: center;}
+        </style>
+
+</body>
+</html>

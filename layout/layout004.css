@@ -1,0 +1,199 @@
+
+@charset 'UTF-8';
+*{margin: 0;    padding: 0;}
+ul,ol{list-style: none;}
+a {text-decoration: none; color: #000;}
+img {border: none;
+    vertical-align: bottom;}
+    
+/* box1설정 */
+.box1 {display: flex;
+        justify-content: space-around;
+        height: 120px;
+        align-items: center;
+        background-color: #fff;}
+.box1 .logo {width: 50px;
+            height: auto;}
+.box1 .logo img {width: 150px;
+    height: 140px;
+    transform: translateY(-70px);
+    position: absolute;}
+.box1 .gnb {}
+.gnb ul {display: flex;}
+.gnb li {margin: 0 20px;
+        font-size: 15px;
+        transition: all 0.5s;}
+.box1 .btn {border: 1px solid #000972;
+            padding: 8px 16px;
+            background-color: #000972;
+            color: aliceblue;
+            font-size: 12px;
+            border-radius: 2px;}
+.gnb li:hover {transform: translateY(-18px);}
+.box1 .btn:hover {background-color: aliceblue;
+                color: #000972;}
+
+
+/* 박스2설정 */
+
+.box2 {height: 90vh;
+        overflow: hidden;
+        position: relative;}
+.box2 .vid {position: absolute;
+    z-index: -1;
+    left: -20px;}
+.box2 video {
+                width: 100%;
+                height: 100%;
+                transform: translateY(-150px)
+                ;}
+
+
+.box2 .hero {
+    margin: 0 auto;
+    width: 80%;}
+.hero>div {width: 50%;}
+
+.box2 .txtBox {margin-bottom: 40px;
+    margin-top: 35px;}
+.box2 .txtBox strong {font-size: 25px;
+                    color: #333;    
+                    padding: -5px 20px;
+                    background-color: rgb(255, 255, 255);}
+.box2 .txtBox p {font-size: 32px;
+    margin-top: 20px;
+    color: #fff;
+    text-decoration: underline;}
+.box2 .imgBox {width: 100%;
+            height: 100%;}
+.box2 img {width: 100%;
+            height: 100%;}
+
+
+
+
+
+/* 박스3설정 */
+.box3{height: 100vh;
+    background-image: url(img/full-bloom.png);}
+.box3>div:nth-child(1) {height: 20%;
+                background-color: #000972;}
+.box3>div:nth-child(2) {height: 80%;}
+
+.box3 .titleBox {color: aliceblue;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                flex-direction: column;}
+.box3 .titleBox strong {font-size: 30px;
+                            }
+.box3 .titleBox p {margin-top: 20px;}
+.box3 .titleBox span {font-size: 50px;}
+.box3 .listBox {display: flex;
+                margin: 0 auto;
+                width: 80%; 
+                display: flex;
+                    justify-content: center;
+                    align-items: center;}
+.box3 .listBox>div {margin: 40px;
+    width: 33.3333%;
+    }
+.box3 .listBox {width: 100%;
+    height: 100%;}
+.box3 .listBox li {font-size: 20px;
+                    font-weight: bold;
+                    height: 100%;
+                    width: 100%;
+                    margin-bottom: 5px;}
+.box3 .listBox li p {font-size: 12px;
+                    font-weight: normal;
+                    }
+.box3 .listBox img {width: 100%;
+                    height: 400px;
+                    margin-bottom: 15px;}
+
+.box3 .listBox .listBox1 {}
+.box3 .listBox .listBox1 ul {}
+.box3 .listBox .listBox1 li {}
+
+
+/* 박스4설정 */
+.box4 {height: 100vh;}
+.box4-inner {display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;}
+.box4-inner>div {width: 50%;}
+.box4-1{background-image: url(https://assets.vogue.com/photos/64ff70da8db73ae6bec8ff6a/master/w_1920,c_limit/download%20.jpeg);
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed; top: 0; left: 0; 
+    z-index: -100;
+    width: 100%;
+    height: 100%;
+}
+.box4-1 .title {
+    font-size: 50px;
+    font-weight: bold;
+}
+.box4-1 .txt {margin-top: 20px;
+                width: 70%;
+                text-align: center;}
+.box4-1 .btn {border: 1px solid rgb(255, 255, 255);
+            display: inline-block;
+            padding: 12px;
+            margin-top: 50px;}
+.box4-1 .btn:hover {background-color: #333;
+                    border: 1px solid #333;} 
+.box4-2{ display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+.box4-2 .listBox {list-style-type: decimal;
+                    
+position: absolute;
+left: 55%;
+}
+.box4-2 strong {margin-bottom: 10px;}
+.box4-2 .listBox li {margin-bottom: 40px;
+                    font-size: 30px;}
+
+
+
+/* 박스5설정 */
+
+.box5 {height: 100vh;background-color: #000972;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;}
+.box5-inner{display: flex;
+            margin: 0 auto;
+            width: 80%;}
+.box5-inner .titleBox {width: 40%;
+                        }
+.box5-inner .titleBox p {font-size: 30px;
+    color: #fff;
+    text-align: right;
+    display: block;
+    margin-bottom: 20px;}
+.box5-inner .titleBox strong {font-size: 40px;
+                            
+                            color: #fff;
+                            text-align: right;
+                            display: block;}
+.box5-inner .txtBox {width: 60%;
+                    margin-left: 50px;}
+.box5-inner .txtBox span {font-size: 20px;
+                            color: #fff;}
+.box5-inner .btn p {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 12px;
+    color: #fff;
+    margin-top: 50px;
+    display: inline-block;}
+.box5-inner .btn:hover p {background-color: #fff;
+                            color: #000972;}

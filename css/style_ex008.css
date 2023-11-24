@@ -1,0 +1,29 @@
+/* 언어설정 */
+@charset 'UTF-8';
+/* resat */
+*{margin: 0;
+    padding: 0;}
+ul,ol{list-style: none;}
+a {text-decoration: none; 
+    color: black;}
+
+img{border: none;}
+
+/* 컨테이너박스설정 (부모속성) */
+#wrap{display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%; margin: 0 auto;}
+/* item박스설정 (자손자속성) */
+.header {background-color: #ff6b57; height: 80px; width: 100%;}
+.slide {background-color: #3c90be; height: 600px; width: 100%;}
+.gallery {background-color: #f8de73; height: 300px; width: 50%;}
+.rankup {background-color: #00d2a5; height: 300px; width: 50%;}
+.latest {background-color: #9cabe4; height: 70px; width: 100%;}
+.popular {background-color: #d76817;height: 270px ;width: 20%;}
+.banner {background-color: #0175bb; height: 270px; width: 80%;}
+.sns {background-color: #fe6eda; height: 200px; width: 10%;order: 1;}
+.footer {background-color: #474747;height: 200px; width: 90%;}
+
+
+    

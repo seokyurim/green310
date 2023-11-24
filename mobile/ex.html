@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+            <ul>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <div class="wrap1">
+        <div class="box1">
+            <ul>
+                <li><img src="img/bg_afternoon.jpg" alt=""></li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+            <ul>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+            </ul>
+    </div>
+
+
+    <style>
+        *{margin: 0;    padding: 0;}
+        ul,ol{list-style: none;}
+        a {text-decoration: none; color: #000;}
+        img {border: none;
+        vertical-align: bottom;}
+
+        @keyframes ani1 {
+            0% {left: 100%}
+            50% {left: 0%}
+            100% {left: -100%}
+        }
+        @keyframes ani2 {
+            0% {left: 0%}
+            50% {left: -100%}
+            50.000001%{left: 100%}
+            100% {left: 0%}
+        }
+        /* wrap 설정 */
+        .wrap{width: 500px;
+            margin: 20px auto;
+            height: 200px;
+            background-color: rebeccapurple;
+            position: relative;
+            overflow: hidden;}
+        .wrap .box {display: flex;}
+        .wrap ul {display: flex;
+                position: absolute;}
+                .wrap ul:nth-child(1) {left: 0;
+                    animation: ani2 10s linear infinite;}
+                .wrap ul:nth-child(2) {left: 100%;
+                                        animation: ani1 10s linear infinite;}
+                .wrap ul:nth-child(3)
+        .wrap li {width: 100px;
+                height: 200px;
+                border: 2px solid #000;
+                box-sizing: border-box;}
+    
+        .wrap:hover ul{animation-play-state:paused ;}
+        .wrap li:hover {background-color: aliceblue;}
+
+        
+        /* wrap1 설정 */
+        .wrap1 {background-color: antiquewhite;
+            width: 800px;
+            margin: 20px auto;
+            height: 400px;
+            position: relative;
+            overflow: hidden;}
+        .wrap1 .box1 {display: flex;}
+        .wrap1 ul {display: flex;
+                    position: absolute;}
+                    .wrap1 ul:nth-child(1) {left: 0;
+                        animation: ani4 10s linear infinite;}
+                    .wrap1 ul:nth-child(2) {left: 100%;
+                            animation: ani3 10s linear infinite;}
+        .wrap1 li {border: 1px #000 solid;
+                box-sizing: border-box;
+                width: 200px;
+                height: 200px;}
+        .wrap1 li img {width: 100%;
+                    height: 100%;}
+    @keyframes ani3{
+    0% {left:100%}
+    50% {left: 0%;}
+    100% {left: -100%;}
+    }
+    @keyframes ani4{
+    0% {left: 0;}
+    50%{left: -100%;}
+    50.0000001% {left: 100%;}
+    100% {left: 0;}
+    }
+        
+    </style>
+</body>
+</html>

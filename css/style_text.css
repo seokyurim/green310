@@ -1,0 +1,84 @@
+/* 언어설정 */
+@charset 'UTF-8';
+
+/* text -align */
+
+h1 {color: brown;}
+
+.align {background-color: #aaa;}
+.align p {border: 1px solid #000;
+            margin-bottom: 10px;
+            width: 500px;}
+.align p:nth-child(1) {text-align: left;}
+.align p:nth-child(2) {text-align: right;}
+.align p:nth-child(3) {text-align: center;}
+.align p:nth-child(4) {text-align: justify;}
+
+
+/* line-height */
+.line {background-color: #bbb;}
+.line p {border: 1px solid #000;
+            margin-bottom: 10px;
+            width: 500px;}
+.line p:nth-child(1) {line-height: 1;}
+.line p:nth-child(2) {line-height: 2;}
+.line p:nth-child(3) {line-height: 20px;}
+.line p:nth-child(4) {line-height: 0;}
+
+/* text-decoration */
+.decoration {background-color: #ccc;}
+.decoration p {border: 1px solid #000;
+            margin-bottom: 10px;
+            width: 500px;}
+
+.decoration p:nth-child(1) a {text-decoration: none;}
+.decoration p:nth-child(2) {text-decoration: underline ;}
+.decoration p:nth-child(3) {text-decoration: overline;}
+.decoration p:nth-child(4) {text-decoration: line-through;}
+
+
+/* letter-spacong */
+.letter {background-color: #ddd;}
+.letter p {border: 1px solid #000;
+            margin-bottom: 10px;
+            width: 500px;}
+.letter p:nth-child(1) {letter-spacing: 10px;}
+.letter p:nth-child(2) {letter-spacing: 3px;}
+.letter p:nth-child(3) {letter-spacing: -5px;}
+.letter p:nth-child(4) {letter-spacing: 0;}
+
+/* text-indent */
+.indent {background-color: #eee;}
+.indent p {border: 1px solid #000;
+            margin-bottom: 10px;
+            width: 500px;}
+            .indent em {display: inline-block;}
+.indent p:nth-child(1){text-indent: 20px;}
+.indent p:nth-child(2) em {text-indent: 50px;}
+.indent p:nth-child(3) em {text-indent: -20px;}
+.indent p:nth-child(4) em {text-indent: -9999px;}
+
+/* text-transform */
+.transform {background-color: #999;}
+.transform p {border: 1px solid #000;
+            margin-bottom: 10px;
+            width: 500px;}
+.transform p:nth-child(1){text-transform: uppercase;}
+.transform p:nth-child(2){text-transform: lowercase;}
+.transform p:nth-child(3){text-transform: capitalize;}
+.transform p:nth-child(4){text-transform: full-width;}
+
+
+/* liststyle-type */
+
+.liststyle001 {list-style: circle;}
+.liststyle002 {list-style: square;}
+.liststyle003 {list-style: lower-roman;}
+.liststyle004 {list-style: upper-roman;}
+.liststyle005 {list-style: lower-greek;}
+.liststyle006 {list-style: lower-latin;}
+.liststyle007 {list-style: upper-latin;}
+
+/* 특수기호표기 */
+.before::before {content: '\00ab';}
+.after::after {content: '\006c'; margin-left: 10px;}

@@ -1,0 +1,27 @@
+/* 언어설정 */
+@charset 'UTF-8';
+/* RESET설정 */
+*{margin: 0; padding: 0;}
+ul,ol{list-style: none;}
+a {text-decoration: none; color: black;}
+
+/* 박스2-1과 2-2의 가로정렬 */
+.box2, .box3 {float: left; width: 50%;}
+.boxA::after {content: ''; display: block; clear: both;}
+
+/* 박스4-1, 4-2, 4-3의 가로정렬 */
+.box5 {float:left; width: 20%;}
+.box6 {float:left; width: 60%;}
+.box7{float:right; width: 20%;}
+.boxB:after {content: ''; display: block; clear: both;}
+
+/*두번째 레이아웃설정 */
+.box10 {float: right; width: 30%;}
+.box11 {float: left; width: 70%}
+.box12 {float: left; width: 70%;}
+.boxD:after {content: ''; display: block; clear: both;}
+
+/* 정답 */
+.boxE {float: left; width: 70%;}
+.box18 {float: left; width: 30%;}
+.boxF::after {content: ''; display: block; clear: both;}

@@ -1,0 +1,19 @@
+/* 언어설정 */
+@charset 'UTF-8';
+/* reset설정 */
+*{margin: 0; padding: 0;}
+ul , ol {list-style: none;}
+a {text-decoration: none; color: black;}
+
+
+/* 박스A설정 */
+.boxA {} /*부모자의 설정*/
+.box1, .box2 {} /*자손자의 설정*/
+
+/* box1과 box2의 가로정렬 */
+
+
+.box1, .box2 {float: left;}
+.boxA::after {content: ''; display: block; clear: both;}
+.box1 {width: 70%;}
+.box2 {width: 30%;}

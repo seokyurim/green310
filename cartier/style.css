@@ -1,0 +1,123 @@
+
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+*{margin: 0;    padding: 0;}
+ul,ol{list-style: none;}
+a {text-decoration: none; color: #bbb;}
+img {border: none;
+    vertical-align: bottom;}
+
+    body {font-family: 'Raleway', sans-serif;
+        position: fixed;
+        left: 0 ; top: 0;
+        width: 100%;
+        height: 100%;}
+
+/* 전체화면설정 */
+.wrap {position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+    background-position:  center bottom;}
+
+    /* 로고설정 */
+    .wrap h1 {position: fixed;
+            width: 300px;
+            left: 0 ;
+            text-align: center;
+            line-height: 0.8;
+            top: 240px;}
+    .wrap strong {font-weight: bold;
+                color: #333;
+                font-size: 16px;
+                line-height: 1.2;
+                display: block;
+                font-family: 'Verdana', Geneva, Tahoma, sans-serif;}
+    .wrap h1 span {font-weight: bold;
+                font-size: 16px;
+                display: block;
+                font-family: Arial, Helvetica, sans-serif;
+                line-height: 1.6;
+                letter-spacing: 5px;
+                color: #444;}
+    .wrap img {width: 200px;}
+    
+
+    /* 슬로건 영역 설정 */
+    .txt {position: fixed;
+        left: 20px;
+        top: 400px;
+        color: #111;
+        font-size: 30px;   
+        line-height: 0.8;
+        }
+    .txt span {color: #888;
+                }
+
+    /* 섹션 설정 */
+    section {position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: 3;}
+    section article {width: 12%;
+                    height: 100%;
+                    float: right;
+                    background-image: url(img/divider.png);
+                    background-repeat: no-repeat;
+                    background-position: left center;
+                    position: relative;
+                    
+                    overflow: hidden;}
+    article h2 {position: absolute;
+                top: 300px;
+                left: 20px ;
+                border-left: 3px solid #555;
+                padding-left: 15px;
+                font-size: 20px;
+                font-weight: bold;
+                color: #666;
+                z-index: 2;}
+
+/*div 설정 */
+        article div {position: absolute;
+                top: 300px;
+                height: 0;
+                background-color: #000;
+            opacity: 0.5;
+            width: 100%;
+            z-index: 1;
+            transition: all 0.5s;   
+            }
+
+            article:hover div {height: 70px;
+                            top: 270px;}
+            /* article:hover {width: 35%;} */
+            article:hover h2 {color: #fff;
+                border-left: 3px solid #fff}
+
+/* vid설정 */
+
+article video {height: 100%;
+                width: auto;
+                opacity: 0;}
+
+/* 글씨 */
+article h3 {position: absolute;
+            bottom: 210px;
+            right: -310px;
+            font-size: 40px;
+            color: #fff;}
+article p {position: absolute;
+            bottom: 50px;
+            right: -310px;
+            width: 40%;
+            text-align: right;
+            font-size: 16px;
+            color: #fff;
+            height: 100px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            /* 넘치는 글이 있을 경우 말줄임표를 위해 위에 3가지 속성을 세트처럼 사용함 */
+        }

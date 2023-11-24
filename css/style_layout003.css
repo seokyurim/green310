@@ -1,0 +1,58 @@
+/* 언어설정 */
+@charset 'UTF';
+/* reset */
+*{margin: 0; 
+    padding: 0;}
+ul, ol{list-style: none;}
+a {text-decoration: none; 
+    color: black;}
+    /* 2단 레이아웃 설정 */
+    
+    #wrap {width: 1200px;
+            margin: 0 auto;}
+
+    /* 헤더설정 */
+    .box1 {height: 120px;
+            background-color: #ccc;
+            text-align: center;}
+    
+            /*사이드바와 본문 가로정렬  */
+     .box2{float: left; width: 300px; height:100%;
+            background-color: #eee;
+            text-align: center;}
+     .box3 {float: left;
+            width: 900px;
+            text-align: center;}
+    
+            /* 박스a설정 */
+    .boxA {height: 600px ;}
+    .boxA::after {content: "";
+                    display: block;
+                    clear: both;}
+            /* 푸터 설정 */
+    .box4 {height: 100px;
+            background-color: #333;
+            text-align: center;}
+
+    /* 3단레이아웃 */
+    #wrap1 {width: 1200px;
+            margin: 0 auto;}
+    /* 헤더설정 */
+    .box5 {height: 120px; background-color: antiquewhite;
+            text-align: center;}
+    /* 박스b 설정*/
+    .box6 {float: left;
+            width: 250px;
+            background-color: aquamarine; height: 100%;}
+    .box7 {width: 800px;
+            float: left;}
+    .box8 {float: right;
+            width: 150px;
+            background-color: aquamarine; height: 100%;}
+    .boxB {height: 600px;}
+    .boxB::after {content: "";
+                display: block;
+                clear: both;}
+    .box9 {height: 100px;
+            background-color: #333;
+            text-align: center;}
